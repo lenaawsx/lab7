@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин цветов "Розовая Лагуна"</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery и jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jqueryui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <h1>Цветочный магазин "Розовая Лагуна"</h1>
+  <p>Красота в каждом цветке!</p>
+</header>
+
+<!-- Navigation -->
+<nav class="nav">
+  <a href="#gallery-section">Галерея</a>
+  <a href="#tabs-section">О нас</a>
+  <a href="#quote-section">Цитата</a>
+  <a href="#drag-section">Перетягиваемый</a>
+</nav>
+
+<!-- Hero Section -->
+<section class="section section-hero">
+  <h2>Лучшие цветы для вашего дома</h2>
+  <img src="foto1.jpg" alt="Цветы">
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery-section" class="section section-gallery">
+  <h2>Наша галерея</h2>
+  <div class="gallery">
+    <img src="foto2.jpg" alt="Цветы 1">
+    <img src="foto3.jpg" alt="Цветы 2">
+    <img src="foto4.jpg" alt="Цветы 3">
+    <img src="foto5.jpg" alt="Цветы 4">
+  </div>
+</section>
+
+<!-- Tabs Section -->
+<section id="tabs-section" class="section tabs-container">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-1">О нас</button>
+    <button class="tab-btn" data-tab="tab-2">Отзывы</button>
+    <button class="tab-btn" data-tab="tab-3">Контакты</button>
+  </div>
+  <div class="tab-content active" id="tab-1">
+    <p>Мы продаём свежие цветы с любовью и заботой.</p>
+    <img src="foto6.jpg" alt="О нас">
+  </div>
+  <div class="tab-content" id="tab-2">
+    <p>Наши клиенты довольны сервисом и качеством.</p>
+    <img src="foto7.jpg" alt="Отзывы">
+  </div>
+  <div class="tab-content" id="tab-3">
+    <p>Контактная информация: info@flowershop.com</p>
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section id="quote-section" class="section section-quote">
+  <h2>Цитата дня</h2>
+  <button id="loadQuote">Загрузить цитату</button>
+  <blockquote id="quote">
+    <p>...</p>
+    <cite>...</cite>
+  </blockquote>
+</section>
+
+<!-- Drag & Datepicker Section -->
+<section id="drag-section" class="section section-drag">
+  <h2>Перетягиваемый цветочный горшок</h2>
+  <div id="draggable" class="ui-widget-content">
+    <img src="foto8.jpg" alt="Цветочный горшок">
+  </div>
+  <input type="text" id="datepicker" placeholder="Выберите дату">
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  Магазин цветов "Розовая Лагуна" &copy; 2025
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
